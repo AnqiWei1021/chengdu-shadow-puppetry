@@ -20,11 +20,10 @@ body {
   overflow: hidden;
   padding: 34px 4vw 50px;
   background:
-    radial-gradient(circle at 50% 50%, rgba(255, 181, 91, 0.18), transparent 35%),
+    radial-gradient(circle at 50% 50%, rgba(255, 181, 91, 0.16), transparent 35%),
     linear-gradient(135deg, #b9281b 0%, #e45129 50%, #bd2c1c 100%);
 }
 
-/* 纸张纹理 */
 .hero::before {
   content: "";
   position: absolute;
@@ -41,7 +40,7 @@ body {
     );
 }
 
-/* 十个角色的位置 */
+/* 十个角色的临时占位框 */
 .roles {
   position: relative;
   z-index: 1;
@@ -59,19 +58,20 @@ body {
   height: 120px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(24, 13, 9, 0.45);
-  color: rgba(24, 13, 9, 0.75);
+  border: 2px solid #8f651f;
+  color: #c69a43;
+  background: rgba(104, 61, 16, 0.10);
   font-size: 12px;
 }
 
-/* 横线 */
+/* 深金色横线 */
 .black-line {
   position: relative;
   z-index: 1;
   height: 3px;
   max-width: 1500px;
   margin: 16px auto 0;
-  background: #180d09;
+  background: #9b7026;
 }
 
 /* 标题区 */
@@ -89,39 +89,45 @@ body {
 .eyebrow,
 .section-label {
   margin: 0 0 14px;
+  color: #d9a746;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.24em;
 }
 
+/* 主标题 */
 h1 {
   max-width: 1150px;
   margin: 0;
-  font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
-  font-size: clamp(46px, 7vw, 112px);
+  color: #f0c66b;
+  font-family: "Caveat Brush", cursive;
+  font-size: clamp(52px, 7.5vw, 125px);
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+  text-shadow: 2px 3px 0 rgba(88, 35, 12, 0.32);
 }
 
-.subtitle {
-  margin: 22px 0 10px;
-  font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
-  font-size: clamp(24px, 2.5vw, 40px);
+/* 单独加大 the */
+.the-word {
+  color: #ffd77e;
+  font-size: 1.32em;
 }
 
-/* 以后这里会替换为真实皮影剪影 */
+/* 未来替换成真正的皮影剪影图 */
 .puppet-placeholder {
   width: 155px;
   height: 170px;
   display: grid;
   place-items: center;
-  margin-top: 10px;
-  color: #d74b27;
-  background: #190e0a;
+  margin-top: 24px;
+  color: #d9a746;
+  background: #5d2515;
+  border: 2px solid #9b7026;
   border-radius: 46% 54% 42% 50%;
-  font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
-  font-size: 27px;
-  line-height: 1.2;
+  font-family: "Caveat Brush", cursive;
+  font-size: 22px;
+  line-height: 1.15;
   transform: rotate(-4deg);
 }
 
@@ -129,12 +135,13 @@ h1 {
   position: absolute;
   bottom: 8px;
   margin: 0;
+  color: #d9a746;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.16em;
 }
 
-/* 向下滑后的介绍区 */
+/* 第二屏介绍 */
 .introduction {
   min-height: 100vh;
   display: grid;
@@ -148,13 +155,14 @@ h1 {
   padding: clamp(36px, 6vw, 82px);
   color: #fff8e9;
   background: rgba(20, 15, 13, 0.80);
-  border: 1px solid rgba(255, 240, 210, 0.28);
+  border: 1px solid rgba(217, 167, 70, 0.45);
   box-shadow: 0 20px 55px rgba(45, 10, 5, 0.30);
 }
 
 .intro-card h2 {
   margin: 0 0 28px;
-  font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
+  color: #f0c66b;
+  font-family: "Caveat Brush", cursive;
   font-size: clamp(42px, 6vw, 72px);
   font-weight: 400;
 }
@@ -165,7 +173,6 @@ h1 {
   line-height: 2;
 }
 
-/* 手机版调整 */
 @media (max-width: 650px) {
   .hero {
     padding-top: 22px;
