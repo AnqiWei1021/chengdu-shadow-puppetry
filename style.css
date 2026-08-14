@@ -200,4 +200,170 @@ h1 {
   .eyebrow {
     font-size: 9px;
   }
+}      rgba(255, 228, 172, 0.10) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+}
+
+/* 十个角色的临时占位框 */
+.roles {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 12px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.role {
+  width: 8%;
+  min-width: 40px;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #8f651f;
+  color: #c69a43;
+  background: rgba(104, 61, 16, 0.10);
+  font-size: 12px;
+}
+
+/* 深金色横线 */
+.black-line {
+  position: relative;
+  z-index: 1;
+  height: 3px;
+  max-width: 1500px;
+  margin: 16px auto 0;
+  background: #9b7026;
+}
+
+/* 标题区 */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  min-height: 67vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.eyebrow,
+.section-label {
+  margin: 0 0 14px;
+  color: #d9a746;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+/* 主标题 */
+h1 {
+  max-width: 1150px;
+  margin: 0;
+  color: #f0c66b;
+  font-family: "Caveat Brush", cursive;
+  font-size: clamp(52px, 7.5vw, 125px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+  text-shadow: 2px 3px 0 rgba(88, 35, 12, 0.32);
+}
+
+/* 单独加大 the */
+.the-word {
+  color: #ffd77e;
+  font-size: 1.32em;
+}
+
+/* 未来替换成真正的皮影剪影图 */
+.puppet-placeholder {
+  width: 155px;
+  height: 170px;
+  display: grid;
+  place-items: center;
+  margin-top: 24px;
+  color: #d9a746;
+  background: #5d2515;
+  border: 2px solid #9b7026;
+  border-radius: 46% 54% 42% 50%;
+  font-family: "Caveat Brush", cursive;
+  font-size: 22px;
+  line-height: 1.15;
+  transform: rotate(-4deg);
+}
+
+.scroll-tip {
+  position: absolute;
+  bottom: 8px;
+  margin: 0;
+  color: #d9a746;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+/* 第二屏介绍 */
+.introduction {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 100px 24px;
+  background: #a83725;
+}
+
+.intro-card {
+  width: min(760px, 100%);
+  padding: clamp(36px, 6vw, 82px);
+  color: #fff8e9;
+  background: rgba(20, 15, 13, 0.80);
+  border: 1px solid rgba(217, 167, 70, 0.45);
+  box-shadow: 0 20px 55px rgba(45, 10, 5, 0.30);
+}
+
+.intro-card h2 {
+  margin: 0 0 28px;
+  color: #f0c66b;
+  font-family: "Caveat Brush", cursive;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 400;
+}
+
+.intro-card p:not(.section-label) {
+  margin: 0 0 24px;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 2;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    padding-top: 22px;
+  }
+
+  .roles {
+    gap: 4px;
+  }
+
+  .role {
+    min-width: 0;
+    height: 70px;
+    font-size: 9px;
+  }
+
+  .black-line {
+    height: 2px;
+    margin-top: 10px;
+  }
+
+  .hero-content {
+    min-height: 72vh;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+  }
 }
