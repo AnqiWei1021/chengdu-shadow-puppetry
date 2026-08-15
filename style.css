@@ -55,13 +55,12 @@ body {
 .role {
   width: 8%;
   min-width: 40px;
-  height: 120px;
-  display: grid;
-  place-items: center;
-  border: 2px solid #8f651f;
-  color: #c69a43;
+  height: 140px;
+  padding: 5px;
+  object-fit: contain;
+  object-position: bottom;
+  border: 1px solid rgba(217, 167, 70, 0.55);
   background: rgba(104, 61, 16, 0.10);
-  font-size: 12px;
 }
 
 /* 深金色横线 */
