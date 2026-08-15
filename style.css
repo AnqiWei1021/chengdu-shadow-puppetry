@@ -96,38 +96,29 @@ body {
 
 /* 主标题 */
 h1 {
-  max-width: 1150px;
+  max-width: 1250px;
   margin: 0;
   color: #f0c66b;
-  font-family: "Caveat Brush", cursive;
-  font-size: clamp(52px, 7.5vw, 125px);
-  font-weight: 400;
-  line-height: 0.98;
-  letter-spacing: 0.01em;
-  text-shadow: 2px 3px 0 rgba(88, 35, 12, 0.32);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(44px, 6vw, 100px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
 }
 
 /* 单独加大 the */
 .the-word {
-  color: #ffd77e;
-  font-size: 1.32em;
+  color: inherit;
+  font-size: inherit;
 }
 
 /* 未来替换成真正的皮影剪影图 */
-.puppet-placeholder {
-  width: 155px;
-  height: 170px;
-  display: grid;
-  place-items: center;
-  margin-top: 24px;
-  color: #d9a746;
-  background: #5d2515;
-  border: 2px solid #9b7026;
-  border-radius: 46% 54% 42% 50%;
-  font-family: "Caveat Brush", cursive;
-  font-size: 22px;
-  line-height: 1.15;
-  transform: rotate(-4deg);
+.central-puppet {
+  width: min(390px, 38vw);
+  height: 260px;
+  margin-top: 22px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .scroll-tip {
