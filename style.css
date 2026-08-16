@@ -79,14 +79,11 @@ body {
 /* 第一屏专用 eyebrow：撑满宽度、两端对齐、字间距更大 */
 .eyebrow {
   margin: 0 0 14px;
-  max-width: 1500px;
-  width: 100%;
   color: #c0392b;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.4em;
-  text-align: justify;
-  text-align-last: justify;
+  letter-spacing: 0.6em;
+  text-align: center;
 }
 
 /* 主标题 —— 缩小、黑色、新字体 */
