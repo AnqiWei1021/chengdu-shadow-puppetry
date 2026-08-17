@@ -362,46 +362,22 @@ h1 {
   gap: 20px 40px;
 }
 
-.parts-list {
-  width: min(720px, 100%);
+.parts-canvas {
+  position: relative;
+  width: min(1000px, 100%);
+  height: 650px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
 }
 
-.part-row {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.row-reverse {
-  flex-direction: row-reverse;
-}
-
-.part-img {
-  width: auto;
-  max-width: 200px;
-  max-height: 200px;
+.p-img {
+  position: absolute;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(60, 30, 10, 0.18));
-  flex-shrink: 0;
-}
-
-.img-sm {
-  max-width: 130px;
-  max-height: 130px;
-}
-
-.img-lg {
-  max-width: 260px;
-  max-height: 260px;
 }
 
 .part-note {
-  flex: 1;
+  position: absolute;
   padding: 14px 18px;
   background: rgba(255, 249, 230, 0.9);
   box-shadow: 0 2px 6px rgba(90, 60, 20, 0.12);
@@ -409,8 +385,6 @@ h1 {
 
 .note-1 { clip-path: polygon(3% 6%, 15% 0%, 90% 4%, 97% 12%, 95% 92%, 82% 100%, 8% 96%, 2% 88%); }
 .note-2 { clip-path: polygon(2% 10%, 88% 2%, 98% 8%, 96% 90%, 90% 100%, 12% 97%, 4% 90%, 0% 15%); }
-.note-3 { clip-path: polygon(5% 2%, 95% 6%, 100% 88%, 85% 98%, 10% 100%, 0% 85%, 3% 12%); }
-.note-4 { clip-path: polygon(4% 8%, 92% 0%, 100% 15%, 97% 92%, 88% 100%, 6% 94%, 0% 80%); }
 
 .part-note p {
   margin: 0;
@@ -422,17 +396,4 @@ h1 {
 
 .part-term {
   font-weight: 600;
-}
-
-@media (max-width: 600px) {
-  .part-row, .row-reverse {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .part-img {
-    align-self: center;
-  }
-}
-    margin: 0 auto 40px;
-  }
 }
