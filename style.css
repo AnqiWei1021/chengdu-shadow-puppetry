@@ -373,7 +373,7 @@ h1 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 16px;
 }
 
 .pair {
@@ -393,11 +393,13 @@ h1 {
 }
 
 .p-img {
+  width: 220px !important;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(60, 30, 10, 0.18));
   position: relative;
   z-index: 2;
+  flex-shrink: 0;
 }
 
 .pair-a .p-img {
@@ -437,7 +439,7 @@ h1 {
 @media (max-width: 800px) {
   .parts-columns {
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
   }
   .pair, .pair-a, .pair-b {
     flex-direction: column;
@@ -447,7 +449,6 @@ h1 {
     margin: 0 0 -20px;
   }
 }
-
 .part-term {
   font-weight: 600;
 }
