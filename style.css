@@ -373,7 +373,7 @@ h1 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .pair {
@@ -393,7 +393,7 @@ h1 {
 }
 
 .p-img {
-  width: 220px !important;
+  width: 320px !important;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(60, 30, 10, 0.18));
@@ -403,18 +403,18 @@ h1 {
 }
 
 .pair-a .p-img {
-  margin-right: -30px;
+  margin-right: -40px;
 }
 
 .pair-b .p-img {
-  margin-left: -30px;
+  margin-left: -40px;
 }
 
 .part-note {
   position: relative;
   z-index: 1;
   flex: 1;
-  padding: 14px 18px;
+  padding: 20px 24px;
   background: rgba(255, 249, 230, 0.92);
   box-shadow: 0 2px 6px rgba(90, 60, 20, 0.12);
 }
@@ -428,7 +428,7 @@ h1 {
   margin: 0;
   color: #1a1208;
   font-family: "Source Serif 4", "Noto Serif SC", serif;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -439,7 +439,7 @@ h1 {
 @media (max-width: 800px) {
   .parts-columns {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
   .pair, .pair-a, .pair-b {
     flex-direction: column;
@@ -448,7 +448,4 @@ h1 {
   .pair-a .p-img, .pair-b .p-img {
     margin: 0 0 -20px;
   }
-}
-.part-term {
-  font-weight: 600;
 }
