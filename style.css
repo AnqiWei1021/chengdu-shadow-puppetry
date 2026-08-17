@@ -376,7 +376,15 @@ h1 {
   height: auto;
   margin-bottom: 56px;
 }
-
+.figure-source {
+  position: relative;
+  z-index: 1;
+  margin: -40px 0 56px;
+  color: #7a6a4f;
+  font-family: "Source Serif 4", "Noto Serif SC", serif;
+  font-size: 13px;
+  font-style: italic;
+}
 .callout-grid {
   position: relative;
   z-index: 1;
