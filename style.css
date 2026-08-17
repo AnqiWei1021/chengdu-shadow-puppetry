@@ -399,7 +399,6 @@ h1 {
 .note-3 { clip-path: polygon(5% 2%, 95% 6%, 100% 88%, 85% 98%, 10% 100%, 0% 85%, 3% 12%); }
 .note-4 { clip-path: polygon(4% 8%, 92% 0%, 100% 15%, 97% 92%, 88% 100%, 6% 94%, 0% 80%); }
 .p-img {
-  width: 480px !important;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(60, 30, 10, 0.18));
@@ -408,24 +407,15 @@ h1 {
   flex-shrink: 0;
 }
 
-.pair-a .p-img {
-  margin-right: -20px;
-}
-
-.pair-b .p-img {
-  margin-left: -20px;
-}
-
-.part-note {
-  position: relative;
-  z-index: 1;
-  width: 260px;
-  flex-shrink: 0;
-  padding: 20px 24px;
-  background: rgba(255, 249, 230, 0.92);
-  box-shadow: 0 2px 6px rgba(90, 60, 20, 0.12);
-}
-  .pair-a .p-img, .pair-b .p-img {
-    margin: 0 0 -20px;
-  }
-}
+.img-headwear { width: 480px !important; }
+.img-head     { width: 320px !important; }
+.img-torso    { width: 480px !important; }
+.img-waist    { width: 380px !important; }
+.img-larm     { width: 260px !important; }
+.img-rarm     { width: 260px !important; }
+.img-lcuff    { width: 260px !important; }
+.img-rcuff    { width: 260px !important; }
+.img-lhand    { width: 200px !important; }
+.img-rhand    { width: 200px !important; }
+.img-lleg     { width: 360px !important; }
+.img-rleg     { width: 360px !important; }
