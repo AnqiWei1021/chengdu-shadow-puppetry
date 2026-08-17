@@ -407,8 +407,8 @@ h1 {
   flex-shrink: 0;
 }
 
-.img-headwear头盔 { width: 280px !important; }
-.img-head头     { width: 500px !important; }
+.img-headwear头盔 { width: 180px !important; }
+.img-head头     { width: 350px !important; }
 .img-torso 上半身   { width: 350px !important; }
 .img-waist  下半身  { width: 380px !important; }
 .img-larm 左护臂    { width: 260px !important; }
