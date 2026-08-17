@@ -187,27 +187,29 @@ h1 {
 .intro-card {
   position: relative;
   z-index: 1;
-  width: min(760px, 100%);
-  padding: clamp(32px, 5vw, 60px);
+  width: min(700px, 100%);
+  padding: clamp(28px, 4vw, 48px);
   color: #1a1208;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: none;
 }
 
 .intro-card h2 {
-  margin: 0 0 28px;
+  margin: 0 0 20px;
   color: #1a1208;
   font-family: "Playfair Display", "Noto Serif SC", serif;
-  font-size: clamp(42px, 6vw, 72px);
+  font-size: clamp(30px, 4vw, 44px);
   font-weight: 700;
+  letter-spacing: 0;
 }
 
 .intro-card p:not(.section-label) {
-  margin: 0 0 24px;
+  margin: 0 0 18px;
   color: #1a1208;
-  font-size: clamp(17px, 2vw, 22px);
-  line-height: 2;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.65;
+  letter-spacing: 0;
 }
 
 @media (max-width: 650px) {
