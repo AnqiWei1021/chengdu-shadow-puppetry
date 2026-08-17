@@ -188,10 +188,10 @@ h1 {
   position: relative;
   z-index: 1;
   width: min(760px, 100%);
-  padding: 0;
+  padding: clamp(32px, 5vw, 60px);
   color: #1a1208;
-  background: none;
-  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: none;
 }
 
