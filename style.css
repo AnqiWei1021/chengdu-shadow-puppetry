@@ -441,3 +441,28 @@ h1 {
 .part-term {
   font-weight: 600;
 }
+.pair {
+  position: relative;
+}
+
+.pair-a {
+  transform: rotate(-2deg);
+}
+
+.pair-b {
+  transform: rotate(2deg);
+}
+
+.pair-box {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.pair-a .pair-box {
+  flex-direction: row;
+}
+
+.pair-b .pair-box {
+  flex-direction: row-reverse;
+}
