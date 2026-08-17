@@ -419,3 +419,25 @@ h1 {
 .img-rhand    { width: 200px !important; }
 .img-lleg     { width: 360px !important; }
 .img-rleg     { width: 360px !important; }
+
+.part-note {
+  position: relative;
+  z-index: 1;
+  width: 260px;
+  flex-shrink: 0;
+  padding: 20px 24px;
+  background: rgba(255, 249, 230, 0.92);
+  box-shadow: 0 2px 6px rgba(90, 60, 20, 0.12);
+}
+
+.part-note p {
+  margin: 0;
+  color: #1a1208;
+  font-family: "Source Serif 4", "Noto Serif SC", serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.part-term {
+  font-weight: 600;
+}
