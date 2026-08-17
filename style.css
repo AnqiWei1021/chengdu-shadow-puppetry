@@ -393,7 +393,7 @@ h1 {
 }
 
 .p-img {
-  width: 320px !important;
+  width: 420px !important;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(60, 30, 10, 0.18));
@@ -403,11 +403,11 @@ h1 {
 }
 
 .pair-a .p-img {
-  margin-right: -40px;
+  margin-right: -20px;
 }
 
 .pair-b .p-img {
-  margin-left: -40px;
+  margin-left: -20px;
 }
 
 .part-note {
