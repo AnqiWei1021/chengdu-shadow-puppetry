@@ -290,12 +290,11 @@ h1 {
   color: #1a1208;
   font-family: "Archivo", "Noto Serif SC", sans-serif;
   font-size: clamp(38px, 5.5vw, 64px);
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0;
   text-transform: uppercase;
   text-align: center;
 }
-
 .red-divider {
   width: 120px;
   height: 3px;
