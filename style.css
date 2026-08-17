@@ -407,18 +407,18 @@ h1 {
   flex-shrink: 0;
 }
 
-.img-headwear { width: 480px !important; }
-.img-head     { width: 320px !important; }
-.img-torso    { width: 480px !important; }
-.img-waist    { width: 380px !important; }
-.img-larm     { width: 260px !important; }
-.img-rarm     { width: 260px !important; }
-.img-lcuff    { width: 260px !important; }
-.img-rcuff    { width: 260px !important; }
-.img-lhand    { width: 200px !important; }
-.img-rhand    { width: 200px !important; }
-.img-lleg     { width: 360px !important; }
-.img-rleg     { width: 360px !important; }
+.img-headwear头盔 { width: 600px !important; }
+.img-head头     { width: 800px !important; }
+.img-torso 上半身   { width: 480px !important; }
+.img-waist  下半身  { width: 380px !important; }
+.img-larm 左护臂    { width: 260px !important; }
+.img-rarm   右护臂  { width: 260px !important; }
+.img-lcuff  左臂  { width: 260px !important; }
+.img-rcuff   右臂 { width: 260px !important; }
+.img-lhand  左手  { width: 200px !important; }
+.img-rhand   右手 { width: 200px !important; }
+.img-lleg   左腿  { width: 360px !important; }
+.img-rleg   右腿  { width: 360px !important; }
 
 .part-note {
   position: relative;
