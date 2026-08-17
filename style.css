@@ -362,34 +362,55 @@ h1 {
   gap: 20px 40px;
 }
 
-.parts-grid {
+.parts-layout {
+  position: relative;
   width: min(1000px, 100%);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px 24px;
+  height: 1600px;
+  margin: 0 auto;
 }
 
-.part-item {
+.part-pos {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.part-image {
-  width: 100%;
-  max-width: 160px;
-  height: 140px;
+.part-img {
+  height: auto;
   object-fit: contain;
-  background: rgba(255, 255, 255, 0.35);
-  border-radius: 4px;
-  padding: 8px;
-  margin-bottom: 10px;
+  filter: drop-shadow(0 3px 6px rgba(60, 30, 10, 0.18));
+  margin-bottom: 8px;
 }
+
+.img-lg { width: 160px; }
+.img-md { width: 110px; }
+.img-sm { width: 80px; }
+.img-xs { width: 60px; }
+
+/* 中轴：头盔 → 头部 → 躯干 → 腰甲 */
+.pos-headwear { left: 50%; top: 0; transform: translateX(-50%); }
+.pos-head     { left: 50%; top: 220px; transform: translateX(-50%); }
+.pos-torso    { left: 50%; top: 480px; transform: translateX(-50%); }
+.pos-waist    { left: 50%; top: 780px; transform: translateX(-50%); }
+
+/* 左侧：手臂、护臂、手、腿 */
+.pos-larm  { left: 4%;  top: 380px; }
+.pos-lcuff { left: 2%;  top: 640px; }
+.pos-lhand { left: 8%;  top: 880px; }
+.pos-lleg  { left: 6%;  top: 1150px; }
+
+/* 右侧：手臂、护臂、手、腿 */
+.pos-rarm  { right: 4%;  top: 420px; }
+.pos-rcuff { right: 2%;  top: 660px; }
+.pos-rhand { right: 8%;  top: 900px; }
+.pos-rleg  { right: 6%;  top: 1180px; }
 
 .part-note {
-  width: 100%;
+  width: 180px;
   padding: 12px 14px 16px;
-  background: rgba(255, 249, 230, 0.85);
+  background: rgba(255, 249, 230, 0.9);
   box-shadow: 0 2px 6px rgba(90, 60, 20, 0.12);
 }
 
@@ -402,7 +423,7 @@ h1 {
   margin: 0;
   color: #1a1208;
   font-family: "Source Serif 4", "Noto Serif SC", serif;
-  font-size: 13.5px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -411,13 +432,12 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .parts-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .parts-layout {
+    height: auto;
   }
-}
-
-@media (max-width: 500px) {
-  .parts-grid {
-    grid-template-columns: 1fr;
+  .part-pos {
+    position: static;
+    transform: none !important;
+    margin: 0 auto 40px;
   }
 }
