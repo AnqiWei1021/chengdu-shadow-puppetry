@@ -362,29 +362,65 @@ h1 {
   gap: 20px 40px;
 }
 
-.parts-canvas {
-  position: relative;
-  width: min(1000px, 100%);
-  height: 650px;
+.parts-columns {
+  width: min(1100px, 100%);
   margin: 0 auto;
+  display: flex;
+  gap: 60px;
+}
+
+.parts-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.pair {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pair-a {
+  flex-direction: row;
+  transform: rotate(-2deg);
+}
+
+.pair-b {
+  flex-direction: row-reverse;
+  transform: rotate(2deg);
 }
 
 .p-img {
-  position: absolute;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(60, 30, 10, 0.18));
+  position: relative;
+  z-index: 2;
+}
+
+.pair-a .p-img {
+  margin-right: -30px;
+}
+
+.pair-b .p-img {
+  margin-left: -30px;
 }
 
 .part-note {
-  position: absolute;
+  position: relative;
+  z-index: 1;
+  flex: 1;
   padding: 14px 18px;
-  background: rgba(255, 249, 230, 0.9);
+  background: rgba(255, 249, 230, 0.92);
   box-shadow: 0 2px 6px rgba(90, 60, 20, 0.12);
 }
 
 .note-1 { clip-path: polygon(3% 6%, 15% 0%, 90% 4%, 97% 12%, 95% 92%, 82% 100%, 8% 96%, 2% 88%); }
 .note-2 { clip-path: polygon(2% 10%, 88% 2%, 98% 8%, 96% 90%, 90% 100%, 12% 97%, 4% 90%, 0% 15%); }
+.note-3 { clip-path: polygon(5% 2%, 95% 6%, 100% 88%, 85% 98%, 10% 100%, 0% 85%, 3% 12%); }
+.note-4 { clip-path: polygon(4% 8%, 92% 0%, 100% 15%, 97% 92%, 88% 100%, 6% 94%, 0% 80%); }
 
 .part-note p {
   margin: 0;
@@ -392,6 +428,24 @@ h1 {
   font-family: "Source Serif 4", "Noto Serif SC", serif;
   font-size: 14px;
   line-height: 1.6;
+}
+
+.part-term {
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .parts-columns {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .pair, .pair-a, .pair-b {
+    flex-direction: column;
+    transform: none;
+  }
+  .pair-a .p-img, .pair-b .p-img {
+    margin: 0 0 -20px;
+  }
 }
 
 .part-term {
