@@ -290,7 +290,7 @@ h1 {
   color: #1a1208;
   font-family: "Archivo", "Noto Serif SC", sans-serif;
   font-size: clamp(38px, 5.5vw, 64px);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0;
   text-transform: uppercase;
   text-align: center;
