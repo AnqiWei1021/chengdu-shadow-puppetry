@@ -362,54 +362,47 @@ h1 {
   gap: 20px 40px;
 }
 
-.parts-layout {
-  position: relative;
-  width: min(1000px, 100%);
-  height: 1600px;
+.parts-list {
+  width: min(720px, 100%);
   margin: 0 auto;
-}
-
-.part-pos {
-  position: absolute;
   display: flex;
   flex-direction: column;
+  gap: 36px;
+}
+
+.part-row {
+  display: flex;
   align-items: center;
-  text-align: center;
+  gap: 24px;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
 .part-img {
+  width: auto;
+  max-width: 200px;
+  max-height: 200px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(60, 30, 10, 0.18));
-  margin-bottom: 8px;
+  flex-shrink: 0;
 }
 
-.img-lg { width: 160px; }
-.img-md { width: 110px; }
-.img-sm { width: 80px; }
-.img-xs { width: 60px; }
+.img-sm {
+  max-width: 130px;
+  max-height: 130px;
+}
 
-/* 中轴：头盔 → 头部 → 躯干 → 腰甲 */
-.pos-headwear { left: 50%; top: 0; transform: translateX(-50%); }
-.pos-head     { left: 50%; top: 220px; transform: translateX(-50%); }
-.pos-torso    { left: 50%; top: 480px; transform: translateX(-50%); }
-.pos-waist    { left: 50%; top: 780px; transform: translateX(-50%); }
-
-/* 左侧：手臂、护臂、手、腿 */
-.pos-larm  { left: 4%;  top: 380px; }
-.pos-lcuff { left: 2%;  top: 640px; }
-.pos-lhand { left: 8%;  top: 880px; }
-.pos-lleg  { left: 6%;  top: 1150px; }
-
-/* 右侧：手臂、护臂、手、腿 */
-.pos-rarm  { right: 4%;  top: 420px; }
-.pos-rcuff { right: 2%;  top: 660px; }
-.pos-rhand { right: 8%;  top: 900px; }
-.pos-rleg  { right: 6%;  top: 1180px; }
+.img-lg {
+  max-width: 260px;
+  max-height: 260px;
+}
 
 .part-note {
-  width: 180px;
-  padding: 12px 14px 16px;
+  flex: 1;
+  padding: 14px 18px;
   background: rgba(255, 249, 230, 0.9);
   box-shadow: 0 2px 6px rgba(90, 60, 20, 0.12);
 }
@@ -423,21 +416,23 @@ h1 {
   margin: 0;
   color: #1a1208;
   font-family: "Source Serif 4", "Noto Serif SC", serif;
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .part-term {
   font-weight: 600;
 }
 
-@media (max-width: 900px) {
-  .parts-layout {
-    height: auto;
+@media (max-width: 600px) {
+  .part-row, .row-reverse {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .part-pos {
-    position: static;
-    transform: none !important;
+  .part-img {
+    align-self: center;
+  }
+}
     margin: 0 auto 40px;
   }
 }
