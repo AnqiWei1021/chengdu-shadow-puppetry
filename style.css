@@ -415,8 +415,8 @@ h1 {
 .img-rarm   右护臂  { width: 260px !important; }
 .img-lcuff  左臂  { width: 260px !important; }
 .img-rcuff   右臂 { width: 260px !important; }
-.img-lhand  左手  { width: 200px !important; }
-.img-rhand   右手 { width: 200px !important; }
+.img-lhand  左手  { width: 500px !important; }
+.img-rhand   右手 { width: 450px !important; }
 .img-lleg   左腿  { width: 360px !important; }
 .img-rleg   右腿  { width: 360px !important; }
 
