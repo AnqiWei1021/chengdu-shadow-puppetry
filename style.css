@@ -614,3 +614,113 @@ h1 {
     width: 280px;
   }
 }
+
+.crown-deepdive {
+  position: relative;
+  display: flex;
+  padding: 0 24px;
+  background-color: #f6e3ab;
+}
+
+.cd-sticky-wrap {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cd-image-stage {
+  position: relative;
+  width: 550px;
+}
+
+.cd-base-img {
+  width: 550px;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-dim-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.4s ease, background 0.5s ease;
+  pointer-events: none;
+}
+
+.cd-dim-overlay.active {
+  opacity: 1;
+}
+
+.cd-dim-overlay.dim-0 {
+  background: radial-gradient(circle at 50% 50%,
+    transparent 255px,
+    #c0392b 255px, #c0392b 259px,
+    rgba(246,227,171,0.85) 259px);
+}
+.cd-dim-overlay.dim-1 {
+  background: radial-gradient(circle at 40% 18%,
+    transparent 20px,
+    #c0392b 20px, #c0392b 24px,
+    rgba(246,227,171,0.85) 24px);
+}
+.cd-dim-overlay.dim-2 {
+  background: radial-gradient(circle at 45% 35%,
+    transparent 70px,
+    #c0392b 70px, #c0392b 74px,
+    rgba(246,227,171,0.85) 74px);
+}
+.cd-dim-overlay.dim-3 {
+  background: radial-gradient(circle at 45% 10%,
+    transparent 55px,
+    #c0392b 55px, #c0392b 59px,
+    rgba(246,227,171,0.85) 59px);
+}
+.cd-dim-overlay.dim-4 {
+  background: radial-gradient(circle at 22% 57%,
+    transparent 45px,
+    #c0392b 45px, #c0392b 49px,
+    rgba(246,227,171,0.85) 49px);
+}
+.cd-dim-overlay.dim-5 {
+  background: radial-gradient(circle at 47% 25%,
+    transparent 60px,
+    #c0392b 60px, #c0392b 64px,
+    rgba(246,227,171,0.85) 64px);
+}
+.cd-dim-overlay.dim-6 {
+  background: radial-gradient(circle at 33% 20%,
+    transparent 30px,
+    #c0392b 30px, #c0392b 34px,
+    rgba(246,227,171,0.85) 34px);
+}
+.cd-steps {
+  width: 50%;
+  padding: 40px 0;
+}
+
+.cd-step {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+@media (max-width: 800px) {
+  .crown-deepdive {
+    flex-direction: column;
+  }
+  .cd-sticky-wrap, .cd-steps {
+    width: 100%;
+  }
+  .cd-image-stage {
+    width: 280px;
+  }
+}
