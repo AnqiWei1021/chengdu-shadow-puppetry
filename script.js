@@ -1,5 +1,4 @@
 const ddSteps = document.querySelectorAll('.dd-step');
-const ddRing = document.getElementById('dd-ring');
 const ddDim = document.getElementById('dd-dim');
 
 const ddObserver = new IntersectionObserver((entries) => {
@@ -7,7 +6,6 @@ const ddObserver = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       const ringClass = entry.target.dataset.ring;
       const dimNumber = ringClass.replace('ring-', 'dim-');
-      ddRing.className = 'dd-ring ' + ringClass;
       ddDim.className = 'dd-dim-overlay active ' + dimNumber;
       if (ringClass === 'ring-0') {
         ddDim.classList.remove('active');
