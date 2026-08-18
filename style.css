@@ -407,8 +407,8 @@ h1 {
   flex-shrink: 0;
 }
 
-.img-headwear { width: 320px !important; }
-.img-head     { width: 220px !important; }
+.img-headwear { width: 400px !important; }
+.img-head     { width: 500px !important; }
 .img-torso    { width: 320px !important; }
 .img-waist    { width: 260px !important; }
 .img-larm     { width: 180px !important; }
