@@ -411,14 +411,14 @@ h1 {
 .img-head     { width: 500px !important; }
 .img-torso    { width: 320px !important; }
 .img-waist    { width: 260px !important; }
-.img-larm     { width: 180px !important; }
-.img-rarm     { width: 180px !important; }
-.img-lcuff    { width: 180px !important; }
-.img-rcuff    { width: 180px !important; }
-.img-lhand    { width: 140px !important; }
-.img-rhand    { width: 140px !important; }
-.img-lleg     { width: 240px !important; }
-.img-rleg     { width: 240px !important; }
+.img-larm     { width: 350px !important; }
+.img-rarm     { width: 350px !important; }
+.img-lcuff    { width: 350px !important; }
+.img-rcuff    { width: 350px !important; }
+.img-lhand    { width: 400px !important; }
+.img-rhand    { width: 400px !important; }
+.img-lleg     { width: 300px !important; }
+.img-rleg     { width: 300px !important; }
 
 .part-note {
   position: relative;
