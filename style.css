@@ -940,3 +940,6 @@ h1 {
   display: block;
   border: none;
 }
+.symbol-card h2.h2-small {
+  font-size: clamp(20px, 2.8vw, 32px);
+}
