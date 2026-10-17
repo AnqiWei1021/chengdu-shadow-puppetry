@@ -943,3 +943,122 @@ h1 {
 .symbol-card h2.h2-small {
   font-size: clamp(20px, 2.8vw, 32px);
 }
+
+@media (max-width: 800px) {
+  /* 头盔和皇冠图片适应手机宽度 */
+  .dd-sticky-wrap,
+  .cd-sticky-wrap {
+    position: relative;
+    top: auto;
+    height: auto;
+    min-height: 0;
+    padding: 72px 0 24px;
+  }
+
+  .dd-image-stage,
+  .cd-image-stage {
+    width: min(100%, 360px);
+  }
+
+  .dd-base-img,
+  .cd-base-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dd-title {
+    top: -64px;
+    left: 0;
+    font-size: 15px;
+  }
+
+  .dd-step,
+  .cd-step {
+    min-height: auto;
+    padding: 32px 8px;
+  }
+
+  .dd-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  /* 皮影零件图改为手机上的纵向排列 */
+  .parts-canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+  }
+
+  .parts-canvas .p-img,
+  .parts-canvas .part-note {
+    position: static;
+    width: min(100%, 320px);
+  }
+
+  .parts-canvas .p-img {
+    max-height: 220px;
+  }
+
+  .parts-canvas .part-note {
+    padding: 16px 20px;
+  }
+
+  /* 探索区按钮允许换行，内容改为纵向排列 */
+  .explorer {
+    padding: 64px 16px;
+  }
+
+  .explorer-filters {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .filter-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .explorer-body {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .pyramid-grid {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    align-items: flex-start;
+  }
+
+  .pyramid-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .grid-item {
+    width: 64px;
+    height: 64px;
+  }
+
+  .explorer-detail {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* 标题在小屏幕上缩小，避免横向溢出 */
+  h1 {
+    padding: 0 16px;
+    font-size: clamp(30px, 8vw, 42px);
+  }
+
+  .central-puppet {
+    width: min(80vw, 320px);
+    height: 220px;
+  }
+}
